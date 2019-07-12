@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我家菜市</title>
+</head>
+<style>
+body{margin: 0px}
+
+	.welcome{
+		font-family:"Microsoft YaHei";
+		font-size: 15px;
+		color:#D1ECE9;
+		position: absolute;
+		top:-7px;
+		left: 350px;
+	}
+	.denglu{
+		text-decoration: none;
+		color: #F08817
+	}
+	.setting{
+		list-style-type: none;
+		display: block;
+		position: absolute;
+		top:-7px;
+		right:300px
+	}
+	.setting li{
+	   float: right;
+	color:#D1ECE9;
+	}
+	.setting li a:link{
+		text-decoration: none;
+	color:#D1ECE9
+	}
+	.logoimge{
+		position: absolute;
+		top:90px;
+		left:360px;
+	}
+	.forms{
+		position: absolute;
+		left:40%;
+		top: 120px;
+		width:auto;
+		
+	}
+	.tyf{
+		background-color:#FFFFFF;
+		font-weight: bold;
+		font-size: 15px;
+		color:#999999;
+		padding: 9px;
+		width: 78px;border:2px solid #FFB24A;
+		
+	}
+.inputt{
+		padding: 11px;
+		position: absolute;
+		left:77px;
+	    top:0px;
+		width:410px
+	}
+.inputss{
+		float：right;
+		position: absolute;
+		top: -1px;
+        padding: 10px;
+		right: -514px;
+	    width: 80px;
+		background-color: #FFB24A;
+		font-size: 15px;
+		color: #F5F2F2;
+		border: 1px solid #FFB24A;
+	}
+	.shopping{
+		
+		display: block;
+		position: absolute;
+	    top: 120px;
+		right: 400px;
+		background-color:#FFFFFF;
+		padding: 10px;
+	}
+.shopb{
+		background-color:#FFFFFF;
+	    border: #FFFFFF;
+	    color: #F77873;
+	}
+.hot{
+		list-style-type: none;
+		display: block;
+	    position: absolute;
+	    top: 160px;
+	    right:880px;
+	}
+.hot li{
+		float: right;
+		color: #D1ECE9;
+	    font-size: 8px
+	}
+.hot li a:link{
+		text-decoration: none;
+	    color: #D1ECE9;
+	}
+	.zongfenlei{
+		display: block;
+		position: absolute;
+		left: 360px;
+		top: 210px;
+		background-color:#21B699;
+		padding: 8px;
+		width:190px
+	}
+	.fenlei{
+		background-color:#21B699;
+		border: 2px solid #21B699;
+		color: #ffffff;
+		font-size: 20px;
+	}
+/*.zongcaidan{
+	    padding:-10px;
+		background-color:#E6E6E6;
+		width:204px;
+		position: absolute;
+		top: 257.5px;
+		left: 360px;
+	
+}*/
+	.caidang{
+	   background-color:#E6E6E6;
+		
+	}
+	.caidan li{
+		width:201px;
+		list-style-type: none;
+		border-top: 2px solid white;
+		background-color:#E6E6E6;
+		height: 80px;
+		position: relative;
+	    left: 320px;
+		top: -21px;
+		
+	}
+	.caidan li a:link{
+		text-decoration: none;
+		color:#808080;
+		
+		
+	}
+	.dropdown1{
+		display:block;
+		width: 201px;
+		border-bottom: 1px solid white;
+        background-color:#E6E6E6;
+		height: 80px;
+		position: relative;
+	    left: 320px;
+		top:-20px;
+		
+}
+	.dropbtn1{
+		display: block;
+		text-decoration: none;
+		color:#808080
+			
+	}
+	.dropdown-content1{
+		display: inline-block;
+        position: absolute;
+		left:205px;
+		top: 5px;
+        background-color: #FFFFFF;
+		padding-left: 0px;
+		padding-right: 800px;
+		padding-bottom: 345px;
+		border: 1px solid black;
+	}
+	/*.dropdown-content1{
+	color:white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+	}*/
+	.dropdown-content1 a:hover{
+		
+		background-color: white;
+		
+	}
+	.dropdown1:hover .dropdown-content1 {
+		
+    display: block;
+	background-color: #FFFFFFF;
+	}
+.dropdown1:hover .dropbtn1 {
+	
+	color:#F77872;
+    background-color:#FFFFFF;
+	border: 1px solid #FFFFFF;
+
+}
+	
+	
+	
+	
+	
+	
+	
+	.dropdown2{
+		display:block;
+		width: 201px;
+		border-bottom: 1px solid white;
+        background-color:#E6E6E6;
+		height: 80px;
+		position: relative;
+	    left: 320px;
+		top:-20px;
+		
+}
+	.dropbtn2{
+		display: block;
+		text-decoration: none;
+		color:#808080
+			
+	}
+	.dropdown-content2{
+		display: none;
+        position: absolute;
+		left:205px;
+		top: -76px;
+        background-color: #FFFFFF;
+		padding-right: 776px;
+		padding-bottom: 482px;
+		border: 1px solid black;
+		overflow: auto;
+	}
+	/*.dropdown-content2 a{
+		color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+	}*/
+	.dropdown-content2 a:hover{
+		
+		background-color: white;
+		
+	}
+	.dropdown2:hover .dropdown-content2 {
+    display: block;
+	background-color: #FFFFFF;
+		
+}
+
+.dropdown2:hover .dropbtn2 {
+	
+	color:#FEB149;
+    background-color:#FFFFFF;
+	border: 1px solid #FFFFFF;
+
+}
+	.guanzhu{
+		display:inline ;
+
+	}
+	.dianpu{
+       display: inline;
+}
+
+</style>
+<body>
+	
+<div class="header">	
+	<img src="../images/底纹.png" alt="底纹" width="100%" height="100%">
+	<p class="welcome"> 欢迎光临我家菜市^_^&emsp;请 <a class="denglu" href="/css/" target="_blank" >登陆</a>&emsp;免费注册</p>
+	<ul class="setting" >
+	    <li><a href="z">&nbsp;账号设置&nbsp;</a></li>
+	    <li><a href="s">&nbsp;收货地址&nbsp;</a>|</li>
+		<li><a href="g">&nbsp;我的关注&nbsp;</a>|</li>
+		<li><a href="d">&nbsp;我的订单&nbsp;</a>|</li>
+		<li><a href="p">&nbsp;我的评论&nbsp;</a>|</li>
+		<li><a href="x">&nbsp;我的消息&nbsp;</a>|</li>
+	</ul>
+	<img  class="logoimge" src="../images/logo.png" alt="logo">
+<form class="forms" action="">
+<select class="tyf" name="tyf">
+<option value="商品" selected>商品</option>
+<option value="浏览记录">记录</option>
+<option value="价格" >价格</option>
+</select>
+<input class="inputt" type="text" style="border:2px solid #FFB24A">
+<input class="inputss" type="submit" value="搜索">
+</form>
+<div class="shopping">
+	<img src="../images/购物车.png" alt="购物车">
+<button class="shopb"><b>我的购物车</b></button>
+	
+</div>
+<ul class="hot" >
+	    <li><a href="z">&nbsp;茶叶&nbsp;</a></li>
+	    <li><a href="s">&nbsp;大米&nbsp;</a>|</li>
+		<li><a href="g">&nbsp;广式腊肉&nbsp;</a>|</li>
+		<li><a href="d">&nbsp;牛肉&nbsp;</a>|</li>
+		<li><a href="p">&nbsp;鸡蛋&nbsp;</a>|</li>
+		<li><a href="x">&nbsp;热门搜索&nbsp;</a>:</li>
+	</ul>
+<div class="zongfenlei">
+<button class="fenlei">&nbsp;菜市分类&emsp;&emsp;&nbsp;</button>
+	<img class="xiajian" src="../images/箭头.png" alt="箭头">
+	</div>
+	</div>
+<ul class="caidan">
+	
+  <div class="dropdown1" style="border-left:5px solid #F77872">
+    <a href="#" class="dropbtn1"><br>&emsp;&emsp;<img src="../images/收藏店铺.png">&nbsp我的关注&emsp;&emsp;&nbsp;<img src="../images/箭头灰.png"><br><br><br></a>
+    <div class="dropdown-content1">
+      <div class="guanzhu">
+		<p class="dianpu" style="display:inline"></p><a href="#">我的更多>></a>
+		</div>
+    </div>
+  </div>
+	
+  <div class="dropdown2" style="border-left:5px solid #FEB149">
+    <a href="#" class="dropbtn2"><br>&emsp;&emsp;<img src="../images/导航水果.png">&nbsp水果&emsp;&emsp;&emsp;&emsp;&nbsp;<img src="../images/箭头灰.png"><p style="font-size: 4px">&emsp;&emsp;&emsp;&emsp;苹果 雪梨 西瓜</p></a>
+    <div class="dropdown-content2">
+      <div class="shuiguo">
+		<ul>
+		  <p>关注的</p>
+		  
+		  </ul>
+		  
+		</div>
+    </div>
+  </div>
+	<li style="border-left:5px solid #3ECEB5"><a href="#news"><br>&emsp;&emsp;<img src="../images/导航蔬菜.png">&nbsp蔬菜&emsp;&emsp;&emsp;&emsp;<img src="../images/箭头灰.png"><p style="font-size: 4px">&emsp;&emsp;&emsp;&emsp;菠菜 菜心 丝瓜</p></a></li>
+	<li style="border-left:5px solid #F77872"><a href="#news"><br>&emsp;&emsp;<img src="../images/导航肉类.png">&nbsp肉类&emsp;&emsp;&emsp;&emsp;<img src="../images/箭头灰.png"><p style="font-size: 4px">&emsp;&emsp;&emsp;&emsp;羊肉 牛肉 鸡肉</p></a></li>
+	<li style="border-left:5px solid #B59CC5"><a href="#news"><br>&emsp;&emsp;<img src="../images/导航干货.png">&nbsp干货&emsp;&emsp;&emsp;&emsp;&nbsp;<img src="../images/箭头灰.png"><p style="font-size: 4px">&emsp;&emsp;&emsp;&emsp;冬菇 海参 建国</p></a></li>
+	<li style="border-left:5px solid #4FC2E9"><a href="#news"><br>&emsp;&emsp;<img src="../images/导航水产.png">&nbsp水产&emsp;&emsp;&emsp;&emsp;<img src="../images/箭头灰.png"><p style="font-size: 4px">&emsp;&emsp;&emsp;&emsp;鲫鱼 鲤鱼 鱿鱼</p></a></li>
+	</ul>
+</body>
+</html>
